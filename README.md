@@ -28,7 +28,7 @@ To launch a new process as `NT AUTHORITY\SYSTEM` using `CreateProcessAsUser` or 
 
 ## PoC
 
-<img width="597" height="232" alt="image" src="https://github.com/user-attachments/assets/0250b218-0062-4d05-8a9f-f278bf5f4414" />
+<img width="627" height="159" alt="image" src="https://github.com/user-attachments/assets/d22d8a1d-575a-4731-bc67-76d6046831e0" />
 
 ## Disclaimer: Educational-only purpose
 This PoC is provided solely for learning purposes and to share knowledge within the Red Team community. The code and techniques described herein must only be used in authorized audits and in controlled environments you own or are explicitly permitted to use.

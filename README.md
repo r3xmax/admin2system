@@ -30,7 +30,11 @@ To launch a new process as `NT AUTHORITY\SYSTEM` using `CreateProcessAsUser` or 
 
 <img width="627" height="159" alt="image" src="https://github.com/user-attachments/assets/d22d8a1d-575a-4731-bc67-76d6046831e0" />
 
+## Acknowledge
+Thanks to those who share their research and knowledge, this PoC is based on Technique 1 from this blog:  
+[Steal 'em all! Token impersonation](https://www.securityartwork.es/2021/11/16/steal-em-all-token-impersonation/)
+
 ## Disclaimer: Educational-only purpose
-This PoC is provided solely for learning purposes and to share knowledge within the Red Team community. The code and techniques described herein must only be used in authorized audits and in controlled environments you own or are explicitly permitted to use.
+The code and techniques described herein must only be used in authorized audits and in controlled environments you own or are explicitly permitted to use.
 I am not responsible for any misuse, damage, loss, or legal consequences resulting from unauthorized use of this PoC, its tools, or its code.
 By using this code you agree to use it only for lawful and authorized purposes, and you accept full responsibility for any misuse, damage, or legal consequences that result from your use.

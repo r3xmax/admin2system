@@ -24,7 +24,7 @@ Let's go in more detailed about what steps are needed to perform token impersona
 
 One limitation of an impersonation token is that it cannot be used to spawn new processes. Its scope is restricted to the current thread only. However, executing C++ code within that thread under the context of `NT AUTHORITY\SYSTEM` remains extremely powerful.
 
-To launch a new process as `NT AUTHORITY\SYSTEM` using `CreateProcessAsUser` or `CreateProcessWithTokenW`, the stolen token must be assigned as a **primary token**. This operation requires specific privileges: `SeDebugPrivilege`, `SeAssignPrimaryTokenPrivilege`, and `SeIncreaseQuotaPrivilege`. For more information, check [Access Rights for Access-Token Objects – Microsoft Learn](https://learn.microsoft.com/en-us/windows/win32/secauthz/access-rights-for-access-token-objects)
+To launch a new process as `NT AUTHORITY\SYSTEM` using `CreateProcessAsUser` or `CreateProcessWithTokenW`, the stolen token must be assigned as a **primary token**. This operation requires specific privileges: `SeDebugPrivilege`, `SeAssignPrimaryTokenPrivilege`, or `SeIncreaseQuotaPrivilege`. For more information, check [Access Rights for Access-Token Objects – Microsoft Learn](https://learn.microsoft.com/en-us/windows/win32/secauthz/access-rights-for-access-token-objects)
 
 ## PoC
 

@@ -26,9 +26,15 @@ One limitation of an impersonation token is that it cannot be used to spawn new 
 
 To launch a new process as `NT AUTHORITY\SYSTEM` using `CreateProcessAsUser` or `CreateProcessWithTokenW`, the stolen token must be assigned as a **primary token**. This operation requires specific privileges: `SeDebugPrivilege`, `SeAssignPrimaryTokenPrivilege`, or `SeIncreaseQuotaPrivilege`. For more information, check [Access Rights for Access-Token Objects – Microsoft Learn](https://learn.microsoft.com/en-us/windows/win32/secauthz/access-rights-for-access-token-objects)
 
-## PoC
+## PoC (C++)
 
 <img width="627" height="159" alt="image" src="https://github.com/user-attachments/assets/d22d8a1d-575a-4731-bc67-76d6046831e0" />
+
+## PoC (PowerShell)
+As an alternative to C++, I developed the exploit in PowerShell using the NtObjectManager project, which leverages the same technique to open a command prompt as SYSTEM.
+
+<img width="677" height="278" alt="image" src="https://github.com/user-attachments/assets/dc138fcb-8fc9-482b-879b-bce895632941" />
+
 
 ## Acknowledge
 Thanks to those who share their research and knowledge, this PoC is based on Technique 1 from this blog:  
